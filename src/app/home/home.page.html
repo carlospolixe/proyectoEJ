@@ -1,14 +1,35 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Aplicacion Prueba
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+      <ion-item>
+          <ion-label>Nombre</ion-label>
+          <ion-input [(ngModel)]="JuegosBD.nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Descripción</ion-label>
+          <ion-input [(ngModel)]="JuegosBD.descripcion"></ion-input>
+        </ion-item>
+        <ion-button (click)="clicBotonInsertar()">Añadir Juego</ion-button>
+        <ion-button (click)="clicBotonBorrar()">Borrar Juego</ion-button>
+        <ion-button (click)="clicBotonModificar()">Modificar Juego</ion-button>
+        <ion-item *ngFor="let documentJuego of arrayColeccionJuegos" (click)="selecJuego(documentJuego)">
+          <ion-grid>
+            <ion-row>
+              <p>Nombre=<b>{{documentJuego.data.nombre}}</b></p>
+            </ion-row>
+            <ion-row>
+              <p>Descripcion= {{documentJuego.data.descripcion}}</p>
+            </ion-row>
+           
+          </ion-grid>
+        </ion-item>
+
+   </div>
 </ion-content>
