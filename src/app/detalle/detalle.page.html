@@ -1,9 +1,34 @@
 <ion-header>
   <ion-toolbar>
+
     <ion-title>detalle</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
   </ion-toolbar>
+
 </ion-header>
 
-<ion-content>
+<!-- <ion-content> 
+  My ID is: {{ id }} 
+  <p> Nombre: {{ document.data.nombre }} </p>
+  <p> Descripcion: {{ document.data.descripcion }} </p>
+</ion-content> -->
 
+<ion-content>
+    <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-input [(ngModel)]="document.data.nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Descripción</ion-label>
+      <ion-input [(ngModel)]="document.data.descripcion"></ion-input>
+    </ion-item>
+
+
+      
+    <ion-button (click)="clicBotonInsertar()">Añadir Juego</ion-button>
+    <ion-button (click)="clicBotonBorrar()">Borrar Juego</ion-button>
+    <ion-button (click)="clicBotonModificar()">Guardar Juego</ion-button>
 </ion-content>

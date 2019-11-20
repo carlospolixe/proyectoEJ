@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FirestoreService } from '../firestore.service';
 import { Juego } from '../juego';
+import { Router } from "@angular/router";
 
 
 @Component({
@@ -8,6 +9,8 @@ import { Juego } from '../juego';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
+
+
 export class HomePage {
 
   arrayColeccionJuegos: any = [{
@@ -20,13 +23,23 @@ export class HomePage {
 
   idJuegoReg: string;
 
+  // selecJuego(juegoSelec) {
+  //   console.log("Juego seleccionada: ");
+  //   console.log(juegoSelec);
+  //   this.idJuegoReg = juegoSelec.id;
+  //   this.JuegosBD.nombre = juegoSelec.data.nombre;
+  //   this.JuegosBD.descripcion = juegoSelec.data.descripcion;
+  // }
+
   selecJuego(juegoSelec) {
     console.log("Juego seleccionada: ");
     console.log(juegoSelec);
     this.idJuegoReg = juegoSelec.id;
     this.JuegosBD.nombre = juegoSelec.data.nombre;
     this.JuegosBD.descripcion = juegoSelec.data.descripcion;
+    this.router.navigate(["/detalle/"+this.idJuegoReg]);
   }
+
 
   clicBotonBorrar() {
     this.firestoreService.borrar("juegos", this.idJuegoReg).then(() => {
@@ -46,11 +59,15 @@ export class HomePage {
     })
   }
 
-  constructor(private firestoreService: FirestoreService) {
+  constructor(private firestoreService: FirestoreService, private router: Router) {
 
     this.JuegosBD = {} as Juego;
     this.obtenerListaJuegos();
   } 
+
+  navigateTodetalle() {
+    this.router.navigate(["/detalle/"+this.idJuegoReg]);
+  }
 
 
   
@@ -75,6 +92,8 @@ export class HomePage {
       })
     });
   }
+
+  
 
  
   

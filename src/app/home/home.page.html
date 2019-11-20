@@ -1,24 +1,38 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Aplicacion Prueba
+      Principal
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<!-- <ion-content>
+  <div class="ion-padding">
+    <ion-button color="primary" expand="full" routerLink="/detalle"
+      >detalle - Navegación con router link</ion-button>
+
+    <ion-button color="primary" expand="full" (click)="navigateTodetalle()"
+      >detalle - Navegación a través del controlador</ion-button>
+  </div>
+</ion-content> -->
 
 <ion-content>
   <div class="ion-padding">
-      <ion-item>
+      <!-- <ion-item>
           <ion-label>Nombre</ion-label>
           <ion-input [(ngModel)]="JuegosBD.nombre"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label>Descripción</ion-label>
           <ion-input [(ngModel)]="JuegosBD.descripcion"></ion-input>
-        </ion-item>
+        </ion-item> -->
+
+
+        <!-- <ion-fab-button color="primary" (click)="clicBotonInsertar()">Añadir </ion-fab-button> -->
         <ion-button (click)="clicBotonInsertar()">Añadir Juego</ion-button>
-        <ion-button (click)="clicBotonBorrar()">Borrar Juego</ion-button>
+        <!-- <ion-button (click)="clicBotonBorrar()">Borrar Juego</ion-button>
         <ion-button (click)="clicBotonModificar()">Modificar Juego</ion-button>
+        -->
+       
         <ion-item *ngFor="let documentJuego of arrayColeccionJuegos" (click)="selecJuego(documentJuego)">
           <ion-grid>
             <ion-row>
@@ -30,6 +44,5 @@
            
           </ion-grid>
         </ion-item>
-
-   </div>
+  </div>
 </ion-content>

@@ -1,0 +1,105 @@
+@media (max-width: 576px) {
+  ion-content {
+    --ion-background-color: #c3c5c5;
+  }
+  ion-item {
+    --ion-background-color: #03a9f4;
+  }
+  h2 {
+    color: #ebebeb;
+  }
+  p {
+    color: #000;
+    font-weight: bold;
+  }
+  ion-button {
+    color: #f5dc00;
+  }
+  ion-card-content {
+    background-color: #fcfcfc;
+  }
+}
+@media (min-width: 576px) {
+  ion-content {
+    --ion-background-color: #c3c5c5;
+  }
+  ion-item {
+    --ion-background-color: #03a9f4;
+  }
+  h2 {
+    color: #ebebeb;
+  }
+  p {
+    color: #000;
+    font-weight: bold;
+  }
+  ion-button {
+    color: #f5dc00;
+  }
+  ion-card-content {
+    background-color: #fcfcfc;
+  }
+}
+@media (min-width: 768px) {
+  ion-content {
+    --ion-background-color: #c3c5c5;
+  }
+  ion-item {
+    --ion-background-color: #03a9f4;
+  }
+  h2 {
+    color: #ebebeb;
+  }
+  p {
+    color: #000;
+    font-weight: bold;
+  }
+  ion-button {
+    color: #f5dc00;
+  }
+  ion-card-content {
+    background-color: #fcfcfc;
+  }
+}
+@media (min-width: 992px) {
+  ion-content {
+    --ion-background-color: #c3c5c5;
+  }
+  ion-item {
+    --ion-background-color: #03a9f4;
+  }
+  h2 {
+    color: #ebebeb;
+  }
+  p {
+    color: #000;
+    font-weight: bold;
+  }
+  ion-button {
+    color: #f5dc00;
+  }
+  ion-card-content {
+    background-color: #fcfcfc;
+  }
+}
+@media (min-width: 1200px) {
+  ion-content {
+    --ion-background-color: #c3c5c5;
+  }
+  ion-item {
+    --ion-background-color: #03a9f4;
+  }
+  h2 {
+    color: #ebebeb;
+  }
+  p {
+    color: #000;
+    font-weight: bold;
+  }
+  ion-button {
+    color: #f5dc00;
+  }
+  ion-card-content {
+    background-color: #fcfcfc;
+  }
+}
