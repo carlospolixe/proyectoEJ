@@ -72,13 +72,19 @@ export class HomePage {
 
   
   clicBotonInsertar() {
-    this.firestoreService.insertar("juegos", this.JuegosBD).then(() => {
-      console.log('Juego creado correctamente!');
-      this.JuegosBD= {} as Juego;
-    }, (error) => {
-      console.error(error);
-    });
+    this.router.navigate(["/detalle/Nuevo"]);
   }
+
+
+  
+  // clicBotonInsertar() {
+  //   // this.firestoreService.insertar("juegos", this.JuegosBD).then(() => {
+  //   //   console.log('Juego creado correctamente!');
+  //   //   this.JuegosBD= {} as Juego;
+  //   // }, (error) => {
+  //   //   console.error(error);
+  //   // });
+  // }
 
 
   obtenerListaJuegos(){

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 import { FirestoreService } from '../firestore.service';
+import { Router } from "@angular/router";
 import { Juego } from '../juego';
+
 
 @Component({
   selector: 'app-detalle',
@@ -15,9 +17,10 @@ export class DetallePage implements OnInit {
     id: "",
     data: {} as Juego
   };
+  
 
-  constructor(private activatedRoute: ActivatedRoute,private firestoreService: FirestoreService) {
-    
+  constructor(private activatedRoute: ActivatedRoute,private firestoreService: FirestoreService, private router: Router) {
+
   this.firestoreService.consultarPorId("juegos", this.activatedRoute.snapshot.paramMap.get("id")).subscribe((resultado) => {
     // Preguntar si se hay encontrado un document con ese ID
     if(resultado.payload.data() != null) {
@@ -29,12 +32,99 @@ export class DetallePage implements OnInit {
       // No se ha encontrado un document con ese ID. Vaciar los datos que hubiera
       this.document.data = {} as Juego;
     } 
+    if (this.id == "Nuevo") {
+      document.getElementById("botonBorrar").innerHTML = "Volver";
+    }
   });
   }
 
   ngOnInit() {
     this.id = this.activatedRoute.snapshot.paramMap.get("id");
   }
+
+
+
+  clicBotonBorrar() {
+    if (this.id != "Nuevo") {
+      this.firestoreService.borrar("juegos", this.id).then(() => {
+        this.router.navigate(["/home"]);
+      }, (error) => {
+        console.error(error);
+      });
+    } else{
+      this.router.navigate(["/home"]);
+    }
+  }
+
+  clicBotonModificar() {
+    if (this.id != "Nuevo") {
+      this.firestoreService.actualizar("juegos", this.id, this.document.data).then(() => {
+        this.router.navigate(["/home"]);
+      }, (error) => {
+        console.error(error);
+      });
+    } else{
+      this.firestoreService.insertar("juegos", this.document.data).then(() => {
+        console.log('Personaje creado correctamente!');
+        this.router.navigate(["/home"]);
+      }, (error) => {
+        console.error(error);
+      });
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  //   clicBotonBorrar() {
+  //   this.firestoreService.borrar("juegos", this.id).then(() => {
+  //     this.router.navigate(["/home/"]);
+
+
+  //   })
+  // }
+  
+  // clicBotonBorrar() {
+  //   if (this.id != "Nuevo") {
+  //     this.firestoreService.actualizar("juegos", this.id, this.document.data).then(() => {
+  //       this.router.navigate(["/home"]);
+  //     }, (error) => {
+  //       console.error(error);
+  //     });
+  //   } else{
+  //     this.firestoreService.insertar("juegos", this.document.data).then(() => {
+  //       console.log('Juego creado correctamente!');
+  //       this.router.navigate(["/home"]);
+  //     }, (error) => {
+  //       console.error(error);
+  //     });
+  //   }
+  // }
+
+  
+  // clicBotonModificar() {
+  //   this.firestoreService.actualizar("juegos", this.id, this.document.data).then(() => {
+  //     this.router.navigate(["/home/"]);
+
+  //   })
+  // }
+
+  
+
 
 
 }
