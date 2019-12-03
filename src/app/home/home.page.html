@@ -1,24 +1,15 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Principal
+      JuegosBD
     </ion-title>
     
   </ion-toolbar>
 
 </ion-header>
-<!-- <ion-content>
-  <div class="ion-padding">
-    <ion-button color="primary" expand="full" routerLink="/detalle"
-      >detalle - Navegación con router link</ion-button>
-
-    <ion-button color="primary" expand="full" (click)="navigateTodetalle()"
-      >detalle - Navegación a través del controlador</ion-button>
-  </div>
-</ion-content> -->
 
 <ion-content>
-  <div class="ion-padding">
+  
       <!-- <ion-item>
           <ion-label>Nombre</ion-label>
           <ion-input [(ngModel)]="JuegosBD.nombre"></ion-input>
@@ -29,12 +20,10 @@
         </ion-item> -->
 
 
-        <ion-fab-button color="primary" (click)="clicBotonInsertar()">Añadir </ion-fab-button>
-        <!-- <ion-button (click)="clicBotonInsertar()">Añadir Juego</ion-button> -->
-        <!-- <ion-button (click)="clicBotonBorrar()">Borrar Juego</ion-button>
-        <ion-button (click)="clicBotonModificar()">Modificar Juego</ion-button>
-        -->
-       
+        <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+          <ion-fab-button color="primary" (click)="clicBotonInsertar()"><ion-icon name="add-circle-outline"></ion-icon> </ion-fab-button>
+        </ion-fab>
+      
         <ion-item *ngFor="let documentJuego of arrayColeccionJuegos" (click)="selecJuego(documentJuego)">
           <ion-grid>
             <ion-row>
@@ -46,14 +35,15 @@
            
           </ion-grid>
         </ion-item>
-  </div>
+
 </ion-content>
 
+<!-- Pie de Pagina Con los botones de Navegacion -->
 <ion-footer>
-  <ion-toolbar>
-    <ion-title></ion-title>
-    <ion-button color="primary">Primary</ion-button>
-    <ion-button color="primary">Primary</ion-button>
+  <ion-toolbar align="center">
+    <ion-button color="primary"><ion-icon name="home"></ion-icon></ion-button>
+    <ion-button color="primary"><ion-icon name="search"></ion-icon></ion-button>
+    <ion-button color="primary"><ion-icon name="eye"></ion-icon></ion-button>
     <ion-button color="primary">Primary</ion-button>
   </ion-toolbar>
 </ion-footer>

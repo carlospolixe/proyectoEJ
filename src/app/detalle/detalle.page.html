@@ -7,6 +7,8 @@
     </ion-buttons>
 
   </ion-toolbar>
+  <!-- Link Libreria Google -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </ion-header>
 
@@ -29,6 +31,19 @@
 
       
     <!-- <ion-button (click)="clicBotonInsertar()">Añadir Juego</ion-button> -->
-    <ion-button id="botonBorrar" (click)="clicBotonBorrar()">Borrar Juego</ion-button>
-    <ion-button (click)="clicBotonModificar()">Guardar Juego</ion-button>
+    <div align="center">
+      <ion-button id="botonBorrar" (click)="clicBotonBorrar()">Borrar Juego</ion-button>
+      <ion-button id="botonModificar" (click)="clicBotonModificar()">Guardar Juego</ion-button>
+    </div>
+    
 </ion-content>
+
+<!-- Pie de Pagina Con los botones de Navegacion -->
+<ion-footer>
+    <ion-toolbar align="center">
+      <ion-button color="primary"><ion-icon name="home"></ion-icon></ion-button>
+      <ion-button color="primary"><ion-icon name="search"></ion-icon></ion-button>
+      <ion-button color="primary"><ion-icon name="eye"></ion-icon></ion-button>
+      <ion-button color="primary">Primary</ion-button>
+    </ion-toolbar>
+  </ion-footer>

@@ -5,6 +5,7 @@ import { Router } from "@angular/router";
 import { Juego } from '../juego';
 
 
+
 @Component({
   selector: 'app-detalle',
   templateUrl: './detalle.page.html',
@@ -34,6 +35,7 @@ export class DetallePage implements OnInit {
     } 
     if (this.id == "Nuevo") {
       document.getElementById("botonBorrar").innerHTML = "Volver";
+      document.getElementById("botonModificar").innerHTML = "Añadir";
     }
   });
   }
@@ -88,7 +90,7 @@ export class DetallePage implements OnInit {
 
 
 
-  
+
 
   //   clicBotonBorrar() {
   //   this.firestoreService.borrar("juegos", this.id).then(() => {
