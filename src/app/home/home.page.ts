@@ -40,6 +40,7 @@ export class HomePage {
     this.router.navigate(["/detalle/"+this.idJuegoReg]);
   }
 
+  
 
   clicBotonBorrar() {
     this.firestoreService.borrar("juegos", this.idJuegoReg).then(() => {

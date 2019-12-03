@@ -3,6 +3,7 @@ import { ActivatedRoute } from "@angular/router";
 import { FirestoreService } from '../firestore.service';
 import { Router } from "@angular/router";
 import { Juego } from '../juego';
+import { AlertController } from '@ionic/angular';
 
 
 
@@ -20,7 +21,11 @@ export class DetallePage implements OnInit {
   };
   
 
-  constructor(private activatedRoute: ActivatedRoute,private firestoreService: FirestoreService, private router: Router) {
+  constructor(
+      public alertController: AlertController,
+      private activatedRoute: ActivatedRoute,
+      private firestoreService: FirestoreService, 
+      private router: Router) {
 
   this.firestoreService.consultarPorId("juegos", this.activatedRoute.snapshot.paramMap.get("id")).subscribe((resultado) => {
     // Preguntar si se hay encontrado un document con ese ID
@@ -40,12 +45,47 @@ export class DetallePage implements OnInit {
   });
   }
 
+  bothome(){
+    this.router.navigate(["/home"]);
+  }
+
+
+
   ngOnInit() {
     this.id = this.activatedRoute.snapshot.paramMap.get("id");
   }
 
 
 
+
+  async presentAlertConfirm() {
+    const alert = await this.alertController.create({
+      header: 'Va usted a BORRAR',
+      message: '¿Esta usted seguro que quiere borra el <strong>Juego?</strong>',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: (blah) => {
+            console.log('Confirm Cancel: blah');
+          }
+        }, {
+          text: 'Okay',
+          handler: () => {
+            console.log('Confirm Okay');
+            this.clicBotonBorrar();
+          }
+        }
+      ]
+    });
+
+    await alert.present();
+  }
+
+
+
+  
   clicBotonBorrar() {
     if (this.id != "Nuevo") {
       this.firestoreService.borrar("juegos", this.id).then(() => {
@@ -58,6 +98,11 @@ export class DetallePage implements OnInit {
     }
   }
 
+ 
+
+
+
+  
   clicBotonModificar() {
     if (this.id != "Nuevo") {
       this.firestoreService.actualizar("juegos", this.id, this.document.data).then(() => {
@@ -75,55 +120,6 @@ export class DetallePage implements OnInit {
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //   clicBotonBorrar() {
-  //   this.firestoreService.borrar("juegos", this.id).then(() => {
-  //     this.router.navigate(["/home/"]);
-
-
-  //   })
-  // }
-  
-  // clicBotonBorrar() {
-  //   if (this.id != "Nuevo") {
-  //     this.firestoreService.actualizar("juegos", this.id, this.document.data).then(() => {
-  //       this.router.navigate(["/home"]);
-  //     }, (error) => {
-  //       console.error(error);
-  //     });
-  //   } else{
-  //     this.firestoreService.insertar("juegos", this.document.data).then(() => {
-  //       console.log('Juego creado correctamente!');
-  //       this.router.navigate(["/home"]);
-  //     }, (error) => {
-  //       console.error(error);
-  //     });
-  //   }
-  // }
-
-  
-  // clicBotonModificar() {
-  //   this.firestoreService.actualizar("juegos", this.id, this.document.data).then(() => {
-  //     this.router.navigate(["/home/"]);
-
-  //   })
-  // }
 
   
 
