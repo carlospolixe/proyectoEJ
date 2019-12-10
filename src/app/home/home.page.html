@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      JuegosBD
+      <h2>JuegosBD</h2>
     </ion-title>
     
   </ion-toolbar>
@@ -21,7 +21,7 @@
 
 
         <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-          <ion-fab-button color="primary" (click)="clicBotonInsertar()"><ion-icon name="add-circle-outline"></ion-icon> </ion-fab-button>
+          <ion-fab-button  (click)="clicBotonInsertar()"><ion-icon name="add-circle-outline"></ion-icon> </ion-fab-button>
         </ion-fab>
       
         <ion-item *ngFor="let documentJuego of arrayColeccionJuegos" (click)="selecJuego(documentJuego)">
@@ -39,12 +39,12 @@
 </ion-content>
 
 <!-- Pie de Pagina Con los botones de Navegacion -->
-<ion-footer>
-  <ion-toolbar align="center">
-    <ion-button color="primary"(click)="bothome()"><ion-icon name="home"></ion-icon></ion-button>
-    <ion-button color="primary"><ion-icon name="search"></ion-icon></ion-button>
-    <ion-button color="primary"><ion-icon name="eye"></ion-icon></ion-button>
-    <ion-button color="primary"> <ion-icon name="md-map"></ion-icon></ion-button>
-    <ion-button color="primary" ><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+<ion-footer align="center">
+  <ion-toolbar >
+    <ion-button (click)="bothome()"><ion-icon name="home"></ion-icon></ion-button>
+    <ion-button ><ion-icon name="search"></ion-icon></ion-button>
+    <ion-button ><ion-icon name="eye"></ion-icon></ion-button>
+    <ion-button > <ion-icon name="md-map"></ion-icon></ion-button>
+    <ion-button  ><ion-icon name="arrow-round-back"></ion-icon></ion-button>
   </ion-toolbar>
 </ion-footer>

@@ -1,7 +1,12 @@
 <ion-header>
   <ion-toolbar>
 
-    <ion-title>detalle</ion-title>
+    <ion-title>
+      <h2>
+          DETALLE JUEGO
+      </h2>
+      
+    </ion-title>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -32,18 +37,19 @@
       
     <!-- <ion-button (click)="clicBotonInsertar()">Añadir Juego</ion-button> -->
     <div align="center">
-      <ion-button id="botonBorrar" (click)="presentAlertConfirm()">Borrar Juego</ion-button>
-      <ion-button id="botonModificar" (click)="clicBotonModificar()">Guardar Juego</ion-button>
+      <ion-button  id="botonBorrar" (click)="presentAlertConfirm()">Borrar Juego</ion-button>
+      <ion-button  id="botonModificar" (click)="clicBotonModificar()">Guardar Juego</ion-button>
     </div>
     
 </ion-content>
 
 <!-- Pie de Pagina Con los botones de Navegacion -->
-<ion-footer>
-    <ion-toolbar align="center">
-      <ion-button color="primary"(click)="bothome()"><ion-icon name="home"></ion-icon></ion-button>
-      <ion-button color="primary"><ion-icon name="search"></ion-icon></ion-button>
-      <ion-button color="primary"><ion-icon name="eye"></ion-icon></ion-button>
-      <ion-button color="primary" ><ion-icon name="arrow-round-back"></ion-icon></ion-button>
-    </ion-toolbar>
+<ion-footer align="center">
+  <ion-toolbar >
+    <ion-button (click)="bothome()"><ion-icon name="home"></ion-icon></ion-button>
+    <ion-button ><ion-icon name="search"></ion-icon></ion-button>
+    <ion-button ><ion-icon name="eye"></ion-icon></ion-button>
+    <ion-button > <ion-icon name="md-map"></ion-icon></ion-button>
+    <ion-button  ><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+  </ion-toolbar>
 </ion-footer>
