@@ -5,14 +5,7 @@
 export const environment = {
   production: false,
   firebase:{
-    apiKey: "AIzaSyAijfBDQ_9yLfAKPXIISRVg78igQdhTchM",
-    authDomain: "juegosbd-430f9.firebaseapp.com",
-    databaseURL: "https://juegosbd-430f9.firebaseio.com",
-    projectId: "juegosbd-430f9",
-    storageBucket: "juegosbd-430f9.appspot.com",
-    messagingSenderId: "801803671206",
-    appId: "1:801803671206:web:c4a4f4d453f83320170667",
-    measurementId: "G-1TZ7QZ9KV2"
+
   }
 };
 
