@@ -49,6 +49,13 @@ export class DetallePage implements OnInit {
     this.router.navigate(["/home"]);
   }
 
+  boconfig(){
+    this.router.navigate(["/config"]);
+  }
+
+  boMaps(){
+    this.router.navigate(["/maps"]);
+  }
 
 
   ngOnInit() {

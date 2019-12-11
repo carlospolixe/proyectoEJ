@@ -51,6 +51,19 @@ export class HomePage {
     })
   } 
 
+  boconfig(){
+    this.router.navigate(["/config"]);
+  }
+
+  bothome(){
+    this.router.navigate(["/home"]);
+  }
+
+  boMaps(){
+    this.router.navigate(["/maps"]);
+  }
+
+
   clicBotonModificar() {
     this.firestoreService.actualizar("juegos", this.idJuegoReg, this.JuegosBD).then(() => {
       // Actualizar la lista completa

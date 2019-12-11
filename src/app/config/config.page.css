@@ -1,0 +1,140 @@
+@media (max-width: 576px) {
+  ion-header {
+    color: #fffefe;
+    --ion-background-color: #ef6c00;
+    text-align: left;
+  }
+  ion-item {
+    --ion-background-color: #fdfdfd;
+  }
+  ion-content {
+    --ion-background-color: #fdfdfd;
+  }
+  h2 {
+    color: #bbb;
+  }
+  ion-card-content {
+    background-color: #c3c5c5;
+  }
+  ion-button {
+    --background: #000;
+  }
+  ion-fab-button {
+    --background: #000;
+  }
+  ion-footer {
+    --ion-background-color: #ef6c00;
+  }
+}
+@media (min-width: 576px) {
+  ion-header {
+    color: #fffefe;
+    --ion-background-color: #ef6c00;
+    text-align: left;
+  }
+  ion-item {
+    --ion-background-color: #fdfdfd;
+  }
+  ion-content {
+    --ion-background-color: #fdfdfd;
+  }
+  h2 {
+    color: #bbb;
+  }
+  ion-card-content {
+    background-color: #c3c5c5;
+  }
+  ion-button {
+    --background: #000;
+  }
+  ion-fab-button {
+    --background: #000;
+  }
+  ion-footer {
+    --ion-background-color: #ef6c00;
+  }
+}
+@media (min-width: 768px) {
+  ion-header {
+    color: #fffefe;
+    --ion-background-color: #ef6c00;
+    text-align: left;
+  }
+  ion-item {
+    --ion-background-color: #fdfdfd;
+  }
+  ion-content {
+    --ion-background-color: #fdfdfd;
+  }
+  h2 {
+    color: #bbb;
+  }
+  ion-card-content {
+    background-color: #c3c5c5;
+  }
+  ion-button {
+    --background: #000;
+  }
+  ion-fab-button {
+    --background: #000;
+  }
+  ion-footer {
+    --ion-background-color: #ef6c00;
+  }
+}
+@media (min-width: 992px) {
+  ion-header {
+    color: #fffefe;
+    --ion-background-color: #ef6c00;
+    text-align: left;
+  }
+  ion-item {
+    --ion-background-color: #fdfdfd;
+  }
+  ion-content {
+    --ion-background-color: #fdfdfd;
+  }
+  h2 {
+    color: #bbb;
+  }
+  ion-card-content {
+    background-color: #c3c5c5;
+  }
+  ion-button {
+    --background: #000;
+  }
+  ion-fab-button {
+    --background: #000;
+  }
+  ion-footer {
+    --ion-background-color: #ef6c00;
+  }
+}
+@media (min-width: 1200px) {
+  ion-header {
+    color: #fffefe;
+    --ion-background-color: #ef6c00;
+    text-align: left;
+  }
+  ion-item {
+    --ion-background-color: #fdfdfd;
+  }
+  ion-content {
+    --ion-background-color: #fdfdfd;
+  }
+  h2 {
+    color: #fff;
+  }
+  ion-card-content {
+    background-color: #c3c5c5;
+  }
+  ion-button {
+    --background: #000;
+  }
+  ion-fab-button {
+    --background: #000;
+  }
+  ion-footer {
+    --ion-background-color: #ef6c00;
+  }
+}
