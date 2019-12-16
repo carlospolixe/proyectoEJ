@@ -25,6 +25,12 @@
   ion-footer {
     --ion-background-color: #ef6c00;
   }
+  ion-label {
+    color: #000;
+  }
+  ion-input {
+    color: #ff5100;
+  }
 }
 @media (min-width: 576px) {
   ion-header {
@@ -52,6 +58,12 @@
   }
   ion-footer {
     --ion-background-color: #ef6c00;
+  }
+  ion-label {
+    color: #000;
+  }
+  ion-input {
+    color: #ff5100;
   }
 }
 @media (min-width: 768px) {
@@ -81,6 +93,12 @@
   ion-footer {
     --ion-background-color: #ef6c00;
   }
+  ion-label {
+    color: #000;
+  }
+  ion-input {
+    color: #ff5100;
+  }
 }
 @media (min-width: 992px) {
   ion-header {
@@ -109,6 +127,12 @@
   ion-footer {
     --ion-background-color: #ef6c00;
   }
+  ion-label {
+    color: #000;
+  }
+  ion-input {
+    color: #ff5100;
+  }
 }
 @media (min-width: 1200px) {
   ion-header {
@@ -136,5 +160,11 @@
   }
   ion-footer {
     --ion-background-color: #ef6c00;
+  }
+  ion-label {
+    color: #000;
+  }
+  ion-input {
+    color: #ff5100;
   }
 }

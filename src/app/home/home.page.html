@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      <h2>InstanJuego</h2>
+    <h2>InstanJuego</h2> 
     </ion-title>
     
   </ion-toolbar>
@@ -26,12 +26,22 @@
       
         <ion-item *ngFor="let documentJuego of arrayColeccionJuegos" (click)="selecJuego(documentJuego)">
           <ion-grid>
+       
+
+          
             <ion-row>
-              <p>Nombre=<b>{{documentJuego.data.nombre}}</b></p>
+              <ion-button>  <ion-icon name="bookmarks"></ion-icon></ion-button>
+              <p><br><br><b>{{documentJuego.data.nombre}}</b></p>
+  
             </ion-row>
+
+
             <ion-row>
-              <p>Descripcion= {{documentJuego.data.descripcion}}</p>
+              <p>Precio<br><br><b>{{documentJuego.data.precio}}</b></p>
             </ion-row>
+          
+
+           
            
           </ion-grid>
         </ion-item>

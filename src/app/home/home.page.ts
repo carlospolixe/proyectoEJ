@@ -35,8 +35,8 @@ export class HomePage {
     console.log("Juego seleccionada: ");
     console.log(juegoSelec);
     this.idJuegoReg = juegoSelec.id;
-    this.JuegosBD.nombre = juegoSelec.data.nombre;
-    this.JuegosBD.descripcion = juegoSelec.data.descripcion;
+    // this.JuegosBD.nombre = juegoSelec.data.nombre;
+    // this.JuegosBD.descripcion = juegoSelec.data.descripcion;
     this.router.navigate(["/detalle/"+this.idJuegoReg]);
   }
 
@@ -63,6 +63,16 @@ export class HomePage {
     this.router.navigate(["/maps"]);
   }
 
+  navigateTodetalle() {
+    this.router.navigate(["/detalle/"+this.idJuegoReg]);
+  }
+
+
+  clicBotonInsertar() {
+    this.router.navigate(["/detalle/Nuevo"]);
+  }
+
+
 
   clicBotonModificar() {
     this.firestoreService.actualizar("juegos", this.idJuegoReg, this.JuegosBD).then(() => {
@@ -79,16 +89,7 @@ export class HomePage {
     this.obtenerListaJuegos();
   } 
 
-  navigateTodetalle() {
-    this.router.navigate(["/detalle/"+this.idJuegoReg]);
-  }
-
-
   
-  clicBotonInsertar() {
-    this.router.navigate(["/detalle/Nuevo"]);
-  }
-
 
   
   // clicBotonInsertar() {
