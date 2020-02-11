@@ -13,6 +13,8 @@ export class MapsPage implements OnInit {
   ngOnInit() {
   }
 
+  
+
   bothome(){
     this.router.navigate(["/home"]);
   }
@@ -23,6 +25,10 @@ export class MapsPage implements OnInit {
 
   boMaps(){
     this.router.navigate(["/maps"]);
+  }
+
+  onpickupClick(){
+    this.router.navigate(['pickup-location']);
   }
   
 

@@ -9,38 +9,15 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { environment } from '../environments/environment';
-
-import { ImagePicker } from '@ionic-native/image-picker/ngx';
-
-import { AngularFireStorageModule } from '@angular/fire/storage';
-import { SocialSharing } from '@ionic-native/social-sharing/ngx';
-
-import { CallNumber } from '@ionic-native/call-number/ngx';
-
-
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireStorageModule,
-    AngularFirestoreModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
-    CallNumber,
-    SocialSharing,
     StatusBar,
     SplashScreen,
-    ImagePicker,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
-
-
-
-
-

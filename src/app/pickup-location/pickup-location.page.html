@@ -1,0 +1,38 @@
+<ion-header>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+  
+  <ion-toolbar>
+    <ion-button fill="clear" slot="start" (click)="goBack()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+    <ion-title>Pickup Location</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-item style="cursor: pointer" (click)="locatePosition()">
+        <ion-button fill="clear">
+            <ion-icon slot="start" name="map"></ion-icon>
+            Locate Position
+        </ion-button>
+        
+    </ion-item>
+<ion-item>
+    <!-- <ion-icon slot="start" name="locate"></ion-icon> -->
+    <!-- <ion-label position="stacked">Address</ion-label> -->
+<ion-textarea [(ngModel)]="address" type="text" style="margin-top:20px;"></ion-textarea>
+
+  </ion-item>
+  <div id="mapId"></div>
+<!-- <ion-button shape="round" expand="block" (click)="confirmPickupLocation()">Confirm Pickup Location</ion-button> -->
+</ion-content>
+
+<ion-footer align="center">
+  <ion-toolbar >
+    <ion-button (click)="bothome()"><ion-icon name="home"></ion-icon></ion-button>
+    <ion-button (click)="boconfig()"><ion-icon name="eye"></ion-icon></ion-button>
+    <ion-button (click)="onpickupClick()"> <ion-icon name="md-map"></ion-icon></ion-button>
+    <ion-button  (click)="bothome()"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+  </ion-toolbar>
+</ion-footer>

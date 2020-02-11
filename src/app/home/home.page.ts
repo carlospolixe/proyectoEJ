@@ -72,6 +72,10 @@ export class HomePage {
     this.router.navigate(["/detalle/Nuevo"]);
   }
 
+   onpickupClick(){
+    this.router.navigate(['pickup-location']);
+  }
+
 
 
   clicBotonModificar() {
@@ -113,14 +117,6 @@ export class HomePage {
       })
     });
   }
-
-  
-
- 
-  
-
-
-  
 
 
 }

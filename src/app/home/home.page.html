@@ -28,23 +28,21 @@
           <ion-grid>
        
 
-          
-            <ion-row>
-              <ion-button>  <ion-icon name="bookmarks"></ion-icon></ion-button>
-              <p><br><br><b>{{documentJuego.data.nombre}}</b></p>
-  
-            </ion-row>
-
+            <p><br><br><b>{{documentJuego.data.nombre}}</b></p>
 
             <ion-row>
-              <p>Precio<br><br><b>{{documentJuego.data.precio}}</b></p>
+              <ion-col size="4" >
+                <ion-img [src]="documentJuego.data.imagen"></ion-img><br>
+              </ion-col>
             </ion-row>
-          
 
-           
-           
+            <ion-row>
+              <p>Precio<br><br><b>{{documentJuego.data.precio}} €</b></p>
+            </ion-row>
+
           </ion-grid>
         </ion-item>
+       
 
 </ion-content>
 
@@ -53,7 +51,7 @@
   <ion-toolbar >
     <ion-button (click)="bothome()"><ion-icon name="home"></ion-icon></ion-button>
     <ion-button (click)="boconfig()"><ion-icon name="eye"></ion-icon></ion-button>
-    <ion-button (click)="boMaps()"> <ion-icon name="md-map"></ion-icon></ion-button>
+    <ion-button (click)="onpickupClick()"> <ion-icon name="md-map"></ion-icon></ion-button>
     <ion-button  ><ion-icon name="arrow-round-back"></ion-icon></ion-button>
   </ion-toolbar>
 </ion-footer>
