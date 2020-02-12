@@ -72,7 +72,7 @@ export class HomePage {
     this.router.navigate(["/detalle/Nuevo"]);
   }
 
-   onpickupClick(){
+  onpickupClick(){
     this.router.navigate(['pickup-location']);
   }
 

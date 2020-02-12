@@ -20,30 +20,34 @@ ionViewDidEnter() {
     this.loadMap();
   }
 loadMap() {
-    this.map = new Map("mapId").setView([36.6756,-5.4455], 13);
+    this.map = new Map("mapId").setView([36.6833,-5.45], 13);
+    this.newMarker = marker([36.6833,-5.45], {draggable: 
+    true}).addTo(this.map);
+    this.newMarker.bindPopup("Estamos aqui!").openPopup();
+
 tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution:
         'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
     }).addTo(this.map);
   }
-locatePosition() {
-    this.map.locate({ setView: true }).on("locationfound", (e: any) => {
-      this.newMarker = marker([e.latitude, e.longitude], {
-        draggable: true
-      }).addTo(this.map);
-      this.newMarker.bindPopup("You are located here!").openPopup();
-      // this.getAddress(e.latitude, e.longitude); // This line is added
+// locatePosition() {
+//     this.map.locate({ setView: true }).on("locationfound", (e: any) => {
+//       this.newMarker = marker([e.latitude, e.longitude], {
+//         draggable: true
+//       }).addTo(this.map);
+//       this.newMarker.bindPopup("You are located here!").openPopup();
+//       this.getAddress(e.latitude, e.longitude); // This line is added
    
-      this.newMarker.on("dragend", () => {
-        const position = this.newMarker.getLatLng();
-        // this.getAddress(position.lat, position.lng);// This line is added
+//       this.newMarker.on("dragend", () => {
+//         const position = this.newMarker.getLatLng();
+//         this.getAddress(position.lat, position.lng);// This line is added
        
-      });
-    });
-  }
+//       });
+//     });
+//   }
   
   //The function below is added
-  // getAddress(lat: number, long: number) {
+  getAddress(lat: number, long: number) {
     // let options: NativeGeocoderOptions = {
     //   useLocale: true,
     //   maxResults: 5
@@ -52,7 +56,7 @@ locatePosition() {
     //   // this.address = Object.values(results[0]).reverse();
       
     // });
-  // }
+  }
 // The function below is added
   // confirmPickupLocation() {
   //   let navigationextras: NavigationExtras = {

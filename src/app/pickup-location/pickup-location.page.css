@@ -137,9 +137,4 @@
   ion-footer {
     --ion-background-color: #ef6c00;
   }
-  #mapId {
-    align-content: center;
-    height: 100%;
-    width: 100%;
-  }
 }

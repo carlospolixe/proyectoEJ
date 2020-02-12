@@ -244,5 +244,9 @@ numeroTLF(){
   .catch(err => console.log('Error launching dialer', err));
 }
 
+onpickupClick(){
+  this.router.navigate(['pickup-location']);
+}
+
 
 }
