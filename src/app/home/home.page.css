@@ -11,7 +11,7 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #bbb;
+    color: #fff;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -24,6 +24,10 @@
   }
   ion-footer {
     --ion-background-color: #ef6c00;
+  }
+  #botUs {
+    align-items: center;
+    color: 241;
   }
 }
 @media (min-width: 576px) {
@@ -39,7 +43,7 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #bbb;
+    color: #fff;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -52,6 +56,10 @@
   }
   ion-footer {
     --ion-background-color: #ef6c00;
+  }
+  #botUs {
+    align-items: center;
+    color: 241;
   }
 }
 @media (min-width: 768px) {
@@ -67,7 +75,7 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #bbb;
+    color: #fff;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -80,6 +88,10 @@
   }
   ion-footer {
     --ion-background-color: #ef6c00;
+  }
+  #botUs {
+    align-items: center;
+    color: 241;
   }
 }
 @media (min-width: 992px) {
@@ -95,7 +107,7 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #bbb;
+    color: #fff;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -108,6 +120,10 @@
   }
   ion-footer {
     --ion-background-color: #ef6c00;
+  }
+  #botUs {
+    align-items: center;
+    color: 241;
   }
 }
 @media (min-width: 1200px) {
@@ -136,5 +152,9 @@
   }
   ion-footer {
     --ion-background-color: #ef6c00;
+  }
+  #botUs {
+    color: #fff;
+    --background: #00388d;
   }
 }

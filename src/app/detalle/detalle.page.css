@@ -31,6 +31,18 @@
   ion-input {
     color: #ff5100;
   }
+  #wa {
+    color: #fff;
+    --background: #037c17;
+  }
+  #tw {
+    color: #fff;
+    --background: #00f7ff;
+  }
+  #fa {
+    color: #fff;
+    --background: #00388d;
+  }
 }
 @media (min-width: 576px) {
   ion-header {
@@ -64,6 +76,18 @@
   }
   ion-input {
     color: #ff5100;
+  }
+  #wa {
+    color: #fff;
+    --background: #037c17;
+  }
+  #tw {
+    color: #fff;
+    --background: #00f7ff;
+  }
+  #fa {
+    color: #fff;
+    --background: #00388d;
   }
 }
 @media (min-width: 768px) {
@@ -99,6 +123,18 @@
   ion-input {
     color: #ff5100;
   }
+  #wa {
+    color: #fff;
+    --background: #037c17;
+  }
+  #tw {
+    color: #fff;
+    --background: #00f7ff;
+  }
+  #fa {
+    color: #fff;
+    --background: #00388d;
+  }
 }
 @media (min-width: 992px) {
   ion-header {
@@ -133,6 +169,18 @@
   ion-input {
     color: #ff5100;
   }
+  #wa {
+    color: #fff;
+    --background: #037c17;
+  }
+  #tw {
+    color: #fff;
+    --background: #00f7ff;
+  }
+  #fa {
+    color: #fff;
+    --background: #00388d;
+  }
 }
 @media (min-width: 1200px) {
   ion-header {
@@ -166,5 +214,17 @@
   }
   ion-input {
     color: #ff5100;
+  }
+  #wa {
+    color: #fff;
+    --background: #037c17;
+  }
+  #tw {
+    color: #fff;
+    --background: #00f7ff;
+  }
+  #fa {
+    color: #fff;
+    --background: #00388d;
   }
 }

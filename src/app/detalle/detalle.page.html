@@ -83,9 +83,9 @@
 
     
     <ion-item >
-      <ion-button (click)="whatsappShare()"><ion-icon name="logo-whatsapp" ></ion-icon></ion-button>
-      <ion-button (click)="twitterShare()"><ion-icon name="logo-twitter"></ion-icon></ion-button>
-      <ion-button (click)="facebookShare()"><ion-icon name="logo-facebook"></ion-icon></ion-button>
+      <ion-button (click)="whatsappShare()" id="wa" ><ion-icon name="logo-whatsapp" ></ion-icon></ion-button>
+      <ion-button (click)="twitterShare()" id="tw"><ion-icon name="logo-twitter" ></ion-icon></ion-button>
+      <ion-button (click)="facebookShare()" id="fa"><ion-icon name="logo-facebook" ></ion-icon></ion-button>
     </ion-item>
 
 
@@ -104,7 +104,7 @@
 <!-- Pie de Pagina Con los botones de Navegacion -->
 <ion-footer align="center">
   <ion-toolbar >
-    <ion-button (click)="bothome()"><ion-icon name="home"></ion-icon></ion-button>
+    <ion-button (click)="bothome()"><ion-icon name="home" ></ion-icon></ion-button>
     <!-- <ion-button (click)="boconfig()"><ion-icon name="eye"></ion-icon></ion-button> -->
     <ion-button (click)="onpickupClick()"> <ion-icon name="md-map"></ion-icon></ion-button>
     <ion-button (click)="numeroTLF()"><ion-icon name="call"></ion-icon></ion-button>
