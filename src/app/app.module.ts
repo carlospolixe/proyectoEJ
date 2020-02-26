@@ -21,12 +21,24 @@ import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 import { CallNumber } from '@ionic-native/call-number/ngx';
 
 
+
+
+
+// firestore
+
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireStorageModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AngularFireAuthModule,
     AngularFirestoreModule],
   providers: [
     CallNumber,

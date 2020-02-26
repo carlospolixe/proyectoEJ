@@ -63,6 +63,10 @@ export class HomePage {
     this.router.navigate(["/maps"]);
   }
 
+  boLog(){
+    this.router.navigate(["/paglog"]);
+  }
+
   navigateTodetalle() {
     this.router.navigate(["/detalle/"+this.idJuegoReg]);
   }

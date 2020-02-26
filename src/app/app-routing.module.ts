@@ -8,6 +8,9 @@ const routes: Routes = [
   { path: 'config', loadChildren: './config/config.module#ConfigPageModule' },
   { path: 'maps', loadChildren: './maps/maps.module#MapsPageModule' },
   { path: 'pickup-location', loadChildren: './pickup-location/pickup-location.module#PickupLocationPageModule' },
+  { path: 'paglog', loadChildren: './paglog/paglog.module#PaglogPageModule' },
+  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
 ];
 
 @NgModule({

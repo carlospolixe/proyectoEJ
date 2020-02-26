@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>paglog</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <p>Email: {{ userEmail }}</p>
+  <p>UID: {{ userUID }}</p>
+  <ion-button (click)="login()">Log in</ion-button>
+  <ion-button (click)="logout()">Log out</ion-button>
+</ion-content>
+
+<!-- Pie de Pagina Con los botones de Navegacion -->
+<ion-footer align="center">
+  <ion-toolbar >
+    <ion-button (click)="bothome()"><ion-icon name="home"></ion-icon></ion-button>
+    <!-- <ion-button (click)="boconfig()"><ion-icon name="eye"></ion-icon></ion-button> -->
+    <ion-button (click)="onpickupClick()"> <ion-icon name="md-map"></ion-icon></ion-button>
+    <ion-button  ><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+  </ion-toolbar>
+</ion-footer>
+
