@@ -30,16 +30,16 @@
   <ion-item *ngFor="let documentJuego of arrayColeccionJuegos" (click)="selecJuego(documentJuego)">
     <ion-grid>
       <div id="juegoC">
-        <p><br><br><b>{{documentJuego.data.nombre}}</b></p>
+        <p><b>{{documentJuego.data.nombre}}</b></p>
 
         <ion-row>
-          <ion-col size="4" >
-            <ion-img [src]="documentJuego.data.imagen"></ion-img><br>
+          <ion-col size="8" >
+            <ion-img [src]="documentJuego.data.imagen"></ion-img>
           </ion-col>
         </ion-row>
 
         <ion-row>
-          <p>Precio<br><br><b>{{documentJuego.data.precio}} €</b></p>
+          <p>Precio:<b>{{documentJuego.data.precio}} €</b></p>
         </ion-row>
       </div>
     </ion-grid>
@@ -52,7 +52,6 @@
 <ion-footer align="center">
   <ion-toolbar >
     <ion-button (click)="bothome()"><ion-icon name="home"></ion-icon></ion-button>
-    <!-- <ion-button (click)="boconfig()"><ion-icon name="eye"></ion-icon></ion-button> -->
     <ion-button (click)="onpickupClick()"> <ion-icon name="md-map"></ion-icon></ion-button>
     <ion-button  ><ion-icon name="arrow-round-back"></ion-icon></ion-button>
   </ion-toolbar>

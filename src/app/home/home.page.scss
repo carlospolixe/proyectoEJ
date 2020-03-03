@@ -38,6 +38,10 @@
         background-size: 100%;
     }
 
+    ion-item{
+        align-content: center;
+    }
+
     #titulo{
         color: rgb(239, 108, 0);
         font-weight: bold;
@@ -104,6 +108,10 @@
 
     ion-title{
         background-image: url("https://i.pinimg.com/originals/6e/9e/57/6e9e57ca0c30628a66e5a577e09c4600.png");
+    }
+
+    ion-item{
+        align-content: center;
     }
     
 
@@ -176,6 +184,10 @@
 
     ion-grid{
         border: rgb(0, 0, 0);
+    }
+
+    ion-item{
+        align-content: center;
     }
 
     #titulo{
@@ -252,6 +264,10 @@
         border: rgb(0, 0, 0);
     }
 
+    ion-item{
+        align-content: center;
+    }
+
 
     #titulo{
         color: rgb(239, 108, 0);
@@ -318,6 +334,9 @@
 
     ion-grid{
         border: rgb(0, 0, 0);
+    }
+    ion-item{
+        align-content: center;
     }
 
     #botUs{

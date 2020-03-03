@@ -1,242 +1,394 @@
 @media(max-width: 576px) {
 
-  ion-header {
-      color: rgb(255, 254, 254);
-      --ion-background-color: rgb(239, 108, 0);
-      text-align:left;
-  }
-  ion-item {
-      --ion-background-color: rgb(253, 253, 253);
-  }
+    ion-header {
+        color: rgb(255, 254, 254);
+        --ion-background-color: rgb(239, 108, 0);
+        text-align:left;
+    }
+    ion-item {
+        --ion-background-color: rgb(253, 253, 253);
+    }
 
-  ion-content {
-      --ion-background-color: rgb(253, 253, 253);
-  }
-  
-  h2{
-      color: rgb(187, 187, 187);  
-  }
- 
-  
- 
-  ion-card-content {
-      background-color: rgb(195, 197, 197);
-      
-  }
-
+    ion-content {
+        --ion-background-color: rgb(253, 253, 253);
+    }
+    
+    h2{
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        text-shadow: 2px 2px 2px black; 
+        
+    }
    
-  ion-button {
-      --background: rgb(0, 0, 0);
-      
-  }
+    
+   
+    ion-card-content {
+        background-color: rgb(195, 197, 197);
+        
+    }
 
-  ion-fab-button {
-      --background: rgb(0, 0, 0);
-      
-  }
+     
+    ion-button {
+        --background: rgb(0, 0, 0);
+        
+    }
+
+    ion-fab-button {
+        --background: rgb(0, 0, 0);
+        
+    }
 
 
-  
-  ion-footer {
-      --ion-background-color: rgb(239, 108, 0);
-      
-      
-  }
-  
-  
-  
-  
+    
+    ion-footer {
+        --ion-background-color: rgb(239, 108, 0);
+        
+        
+    }
+
+    ion-label {
+        color: rgb(0, 0, 0);
+        
+        
+    }
+
+    ion-input {
+        color: rgb(255, 81, 0);
+    }
+
+    
+    #wa{
+        color: rgb(255, 255, 255);
+        --background: rgb(3, 124, 23);
+    }
+    
+    #tw{
+        color: rgb(255, 255, 255);
+        --background: rgb(0, 247, 255);
+    }
+
+    
+    #fa{
+        color: rgb(255, 255, 255);
+        --background: rgb(0, 56, 141);
+    }
+    
+    
+    
+    
 }
 @media(min-width: 576px) {
-
-
-  ion-header {
-      color: rgb(255, 254, 254);
-      --ion-background-color: rgb(239, 108, 0);
-      text-align:left;
-  }
-  ion-item {
-      --ion-background-color: rgb(253, 253, 253);
-  }
-
-  ion-content {
-      --ion-background-color: rgb(253, 253, 253);
-  }
-  
-  h2{
-      color: rgb(187, 187, 187);  
-  }
  
   
- 
-  ion-card-content {
-      background-color: rgb(195, 197, 197);
-      
-  }
+    ion-header {
+        color: rgb(255, 254, 254);
+        --ion-background-color: rgb(239, 108, 0);
+        text-align:left;
+    }
+    ion-item {
+        --ion-background-color: rgb(253, 253, 253);
+    }
 
-   
-  ion-button {
-      --background: rgb(0, 0, 0);
-      
-  }
-
-  ion-fab-button {
-      --background: rgb(0, 0, 0);
-      
-  }
-
-
-  
-  ion-footer {
-      --ion-background-color: rgb(239, 108, 0);
-      
-      
-  }
+    ion-content {
+        --ion-background-color: rgb(253, 253, 253);
+    }
     
-  
+    h2{
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        text-shadow: 2px 2px 2px black; 
+        
+    }
+   
+    
+   
+    ion-card-content {
+        background-color: rgb(195, 197, 197);
+        
+    }
+
+     
+    ion-button {
+        --background: rgb(0, 0, 0);
+        
+    }
+
+    ion-fab-button {
+        --background: rgb(0, 0, 0);
+        
+    }
+
+
+    
+    ion-footer {
+        --ion-background-color: rgb(239, 108, 0);
+        
+        
+    }
+
+    ion-label {
+        color: rgb(0, 0, 0);
+        
+        
+    }
+
+    ion-input {
+        color: rgb(255, 81, 0);
+    }
+
+    
+    #wa{
+        color: rgb(255, 255, 255);
+        --background: rgb(3, 124, 23);
+    }
+    
+    #tw{
+        color: rgb(255, 255, 255);
+        --background: rgb(0, 247, 255);
+    }
+
+    
+    #fa{
+        color: rgb(255, 255, 255);
+        --background: rgb(0, 56, 141);
+    }
+      
+    
 }
 @media(min-width: 768px) {
-
-  ion-header {
-      color: rgb(255, 254, 254);
-      --ion-background-color: rgb(239, 108, 0);
-      text-align:left;
-  }
-  ion-item {
-      --ion-background-color: rgb(253, 253, 253);
-  }
-
-  ion-content {
-      --ion-background-color: rgb(253, 253, 253);
-  }
-  
-  h2{
-      color: rgb(187, 187, 187);  
-  }
  
-  
- 
-  ion-card-content {
-      background-color: rgb(195, 197, 197);
-      
-  }
+    ion-header {
+        color: rgb(255, 254, 254);
+        --ion-background-color: rgb(239, 108, 0);
+        text-align:left;
+    }
+    ion-item {
+        --ion-background-color: rgb(253, 253, 253);
+    }
 
-   
-  ion-button {
-      --background: rgb(0, 0, 0);
-      
-  }
-
-  ion-fab-button {
-      --background: rgb(0, 0, 0);
-      
-  }
-
-
-  
-  ion-footer {
-      --ion-background-color: rgb(239, 108, 0);
-      
-      
-  }
+    ion-content {
+        --ion-background-color: rgb(253, 253, 253);
+    }
     
-  
-  
+    h2{
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        text-shadow: 2px 2px 2px black; 
+        
+    }
+    
+   
+    ion-card-content {
+        background-color: rgb(195, 197, 197);
+        
+    }
+
+     
+    ion-button {
+        --background: rgb(0, 0, 0);
+        
+    }
+
+    ion-fab-button {
+        --background: rgb(0, 0, 0);
+        
+    }
+
+
+    
+    ion-footer {
+        --ion-background-color: rgb(239, 108, 0);
+        
+        
+    }
+
+    ion-label {
+        color: rgb(0, 0, 0);
+        
+        
+    }
+
+    ion-input {
+        color: rgb(255, 81, 0);
+    }
+
+    
+    #wa{
+        color: rgb(255, 255, 255);
+        --background: rgb(3, 124, 23);
+    }
+    
+    #tw{
+        color: rgb(255, 255, 255);
+        --background: rgb(0, 247, 255);
+    }
+
+    
+    #fa{
+        color: rgb(255, 255, 255);
+        --background: rgb(0, 56, 141);
+    }
+      
+    
+    
 }
 @media(min-width: 992px) {
- 
-  ion-header {
-      color: rgb(255, 254, 254);
-      --ion-background-color: rgb(239, 108, 0);
-      text-align:left;
-  }
-  ion-item {
-      --ion-background-color: rgb(253, 253, 253);
-  }
-
-  ion-content {
-      --ion-background-color: rgb(253, 253, 253);
-  }
-  
-  h2{
-      color: rgb(187, 187, 187);  
-  }
- 
-  
- 
-  ion-card-content {
-      background-color: rgb(195, 197, 197);
-      
-  }
-
    
-  ion-button {
-      --background: rgb(0, 0, 0);
-      
-  }
+    ion-header {
+        color: rgb(255, 254, 254);
+        --ion-background-color: rgb(239, 108, 0);
+        text-align:left;
+    }
+    ion-item {
+        --ion-background-color: rgb(253, 253, 253);
+    }
 
-  ion-fab-button {
-      --background: rgb(0, 0, 0);
-      
-  }
+    ion-content {
+        --ion-background-color: rgb(253, 253, 253);
+    }
+    
+    h2{
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        text-shadow: 2px 2px 2px black; 
+        
+    }
+   
+    
+   
+    ion-card-content {
+        background-color: rgb(195, 197, 197);
+        
+    }
+
+     
+    ion-button {
+        --background: rgb(0, 0, 0);
+        
+    }
+
+    ion-fab-button {
+        --background: rgb(0, 0, 0);
+        
+    }
 
 
-  
-  ion-footer {
-      --ion-background-color: rgb(239, 108, 0);
-      
-      
-  }
-  
-  
-  
+    
+    ion-footer {
+        --ion-background-color: rgb(239, 108, 0);
+        
+        
+    }
+
+    ion-label {
+        color: rgb(0, 0, 0);
+        
+        
+    }
+
+    ion-input {
+        color: rgb(255, 81, 0);
+    }
+
+    
+    #wa{
+        color: rgb(255, 255, 255);
+        --background: rgb(3, 124, 23);
+    }
+    
+    #tw{
+        color: rgb(255, 255, 255);
+        --background: rgb(0, 247, 255);
+    }
+
+    
+    #fa{
+        color: rgb(255, 255, 255);
+        --background: rgb(0, 56, 141);
+    }
+    
+    
+    
 }
 @media(min-width: 1200px) {
- 
-  
-  ion-header {
-      color: rgb(255, 254, 254);
-      --ion-background-color: rgb(239, 108, 0);
-      text-align:left;
-  }
-  ion-item {
-      --ion-background-color: rgb(253, 253, 253);
-  }
-
-  ion-content {
-      --ion-background-color: rgb(253, 253, 253);
-  }
-  
-  h2{
-      color: rgb(255, 255, 255);  
-  }
- 
-  
- 
-  ion-card-content {
-      background-color: rgb(195, 197, 197);
-      
-  }
-
    
-  ion-button {
-      --background: rgb(0, 0, 0);
-      
-  }
+    
+    ion-header {
+        color: rgb(255, 254, 254);
+        --ion-background-color: rgb(239, 108, 0);
+        text-align:left;
+    }
+    ion-item {
+        --ion-background-color: rgb(253, 253, 253);
+    }
 
-  ion-fab-button {
-      --background: rgb(0, 0, 0);
-      
-  }
+    ion-content {
+        --ion-background-color: rgb(253, 253, 253);
+    }
+    
+    h2{
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        text-shadow: 2px 2px 2px black; 
+        
+    }
+    
+   
+    ion-card-content {
+        background-color: rgb(195, 197, 197);
+        
+    }
+
+     
+    ion-button {
+        --background: rgb(0, 0, 0);
+        
+    }
+
+    ion-fab-button {
+        --background: rgb(0, 0, 0);
+        
+    }
 
 
-  
-  ion-footer {
-      --ion-background-color: rgb(239, 108, 0);
-      
-      
-  }
-  
+    
+    ion-footer {
+        --ion-background-color: rgb(239, 108, 0);
+        
+        
+    }
+
+    ion-label {
+        color: rgb(0, 0, 0);
+        
+        
+    }
+
+    ion-input {
+        color: rgb(255, 81, 0);
+    }
+
+    #wa{
+        color: rgb(255, 255, 255);
+        --background: rgb(3, 124, 23);
+    }
+    
+    #tw{
+        color: rgb(255, 255, 255);
+        --background: rgb(0, 247, 255);
+    }
+
+    
+    #fa{
+        color: rgb(255, 255, 255);
+        --background: rgb(0, 56, 141);
+    }
+    
 }
 
 
