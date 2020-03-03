@@ -1,5 +1,3 @@
-
-
 <ion-header>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -7,10 +5,10 @@
   
   <ion-toolbar>
     <ion-title>
-      <h2>
-          Encuentranos
+     
+      <h2> <ion-icon name="ios-compass"></ion-icon>
+        Encuentranos
       </h2>
-      
     </ion-title>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
@@ -19,22 +17,25 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-
-    <ion-item>
-      <ion-textarea style="margin-top:20px;">
-        
-      </ion-textarea>
-
-    </ion-item>
+    <h2 id="hs">Donde puedes Encontrarnos</h2>
+    <p>Nuestra sede esta principal esta situada en el <b>poligono de ubrique</b> donde recabamos toda la informacion  para poder darselas a nuestros clientes principales como son los jugadores  pero tambien disponemos de sedes en :</p>
+    <ul>
+      <li>Jerez de la Frontera</li>
+      <li>Getafe</li>
+      <li>Zaragoza</li>
+    </ul>
     <!-- contenedor MAPA -->
     <div id="mapId" style="height:200px"></div>
 
+    <p>Si tienes alguna duda llamanos</p>
+    <ion-button (click)="numeroTLF()"  style="width:50%"><ion-icon name="call">Contactanos</ion-icon></ion-button>
+    <h2 id="hs">Quienes Somos</h2>
+    <p>Somos un grupo de chicos entusiatas de los videjuegos que decidimos crear un servicio de informacion de videojuegos despues de haber realizado estudios superiores de diseño de aplicaciones web</p>
 </ion-content>
 
 <ion-footer align="center">
   <ion-toolbar >
     <ion-button (click)="bothome()"><ion-icon name="home"></ion-icon></ion-button>
-    <!-- <ion-button (click)="boconfig()"><ion-icon name="eye"></ion-icon></ion-button> -->
     <ion-button (click)="onpickupClick()"> <ion-icon name="md-map"></ion-icon></ion-button>
     <ion-button  (click)="bothome()"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
   </ion-toolbar>

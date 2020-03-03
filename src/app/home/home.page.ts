@@ -1,7 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FirestoreService } from '../firestore.service';
 import { Juego } from '../juego';
 import { Router } from "@angular/router";
+
+import { AuthService } from '../services/auth.service';
+import { LoadingController } from '@ionic/angular';
+import { AngularFireAuth } from '@angular/fire/auth';
 
 
 @Component({
@@ -20,23 +24,19 @@ export class HomePage {
  
 
   JuegosBD: Juego; 
-
   idJuegoReg: string;
 
-  // selecJuego(juegoSelec) {
-  //   console.log("Juego seleccionada: ");
-  //   console.log(juegoSelec);
-  //   this.idJuegoReg = juegoSelec.id;
-  //   this.JuegosBD.nombre = juegoSelec.data.nombre;
-  //   this.JuegosBD.descripcion = juegoSelec.data.descripcion;
-  // }
+  // variables para el registro de usuarios
+  userEmail: String = "";
+  userUID: String = "";
+  isLogged: boolean;
+
+
 
   selecJuego(juegoSelec) {
     console.log("Juego seleccionada: ");
     console.log(juegoSelec);
     this.idJuegoReg = juegoSelec.id;
-    // this.JuegosBD.nombre = juegoSelec.data.nombre;
-    // this.JuegosBD.descripcion = juegoSelec.data.descripcion;
     this.router.navigate(["/detalle/"+this.idJuegoReg]);
   }
 
@@ -91,7 +91,12 @@ export class HomePage {
     })
   }
 
-  constructor(private firestoreService: FirestoreService, private router: Router) {
+  constructor(
+    private firestoreService: FirestoreService, 
+    private router: Router,
+    public loadingCtrl: LoadingController,
+    private authService: AuthService,
+    public afAuth: AngularFireAuth) {
 
     this.JuegosBD = {} as Juego;
     this.obtenerListaJuegos();
@@ -100,14 +105,7 @@ export class HomePage {
   
 
   
-  // clicBotonInsertar() {
-  //   // this.firestoreService.insertar("juegos", this.JuegosBD).then(() => {
-  //   //   console.log('Juego creado correctamente!');
-  //   //   this.JuegosBD= {} as Juego;
-  //   // }, (error) => {
-  //   //   console.error(error);
-  //   // });
-  // }
+
 
 
   obtenerListaJuegos(){
@@ -121,6 +119,32 @@ export class HomePage {
       })
     });
   }
+
+  ionViewDidEnter() {
+    this.isLogged = false;
+    this.afAuth.user.subscribe(user => {
+      if(user){
+        this.userEmail = user.email;
+        this.userUID = user.uid;
+        this.isLogged = true;
+      }
+    })
+  }
+
+  login() {
+    this.router.navigate(["/login"]);
+  }
+
+  logout(){
+    this.authService.doLogout()
+    .then(res => {
+      this.userEmail = "";
+      this.userUID = "";
+      this.isLogged = false;
+      console.log(this.userEmail);
+    }, err => console.log(err));
+  }
+
 
 
 }

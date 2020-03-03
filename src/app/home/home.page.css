@@ -2,16 +2,12 @@
   ion-header {
     color: #fffefe;
     --ion-background-color: #ef6c00;
-    text-align: left;
   }
   ion-item {
     --ion-background-color: #fdfdfd;
   }
   ion-content {
     --ion-background-color: #fdfdfd;
-  }
-  h2 {
-    color: #fff;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -22,28 +18,40 @@
   ion-fab-button {
     --background: #000;
   }
+  ion-title {
+    background-image: url("https://i.pinimg.com/originals/6e/9e/57/6e9e57ca0c30628a66e5a577e09c4600.png");
+    background-size: 100%;
+  }
+  #titulo {
+    color: #ef6c00;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px whitesmoke;
+  }
   ion-footer {
     --ion-background-color: #ef6c00;
   }
   #botUs {
-    align-items: center;
-    color: 241;
+    color: #fff;
+    --background: #ef6c00;
+    text-align: right;
+  }
+  #usNam {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
   }
 }
 @media (min-width: 576px) {
   ion-header {
     color: #fffefe;
     --ion-background-color: #ef6c00;
-    text-align: left;
   }
   ion-item {
     --ion-background-color: #fdfdfd;
   }
   ion-content {
     --ion-background-color: #fdfdfd;
-  }
-  h2 {
-    color: #fff;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -54,28 +62,39 @@
   ion-fab-button {
     --background: #000;
   }
+  ion-title {
+    background-image: url("https://i.pinimg.com/originals/6e/9e/57/6e9e57ca0c30628a66e5a577e09c4600.png");
+  }
+  #titulo {
+    color: #ef6c00;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px whitesmoke;
+  }
   ion-footer {
     --ion-background-color: #ef6c00;
   }
   #botUs {
-    align-items: center;
-    color: 241;
+    color: #fff;
+    --background: #ef6c00;
+    text-align: right;
+  }
+  #usNam {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
   }
 }
 @media (min-width: 768px) {
   ion-header {
     color: #fffefe;
     --ion-background-color: #ef6c00;
-    text-align: left;
   }
   ion-item {
     --ion-background-color: #fdfdfd;
   }
   ion-content {
     --ion-background-color: #fdfdfd;
-  }
-  h2 {
-    color: #fff;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -86,28 +105,42 @@
   ion-fab-button {
     --background: #000;
   }
+  ion-title {
+    background-image: url("https://i.pinimg.com/originals/6e/9e/57/6e9e57ca0c30628a66e5a577e09c4600.png");
+  }
+  ion-grid {
+    border: #000;
+  }
+  #titulo {
+    color: #ef6c00;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px whitesmoke;
+  }
   ion-footer {
     --ion-background-color: #ef6c00;
   }
   #botUs {
-    align-items: center;
-    color: 241;
+    color: #fff;
+    --background: #ef6c00;
+    text-align: right;
+  }
+  #usNam {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
   }
 }
 @media (min-width: 992px) {
   ion-header {
     color: #fffefe;
     --ion-background-color: #ef6c00;
-    text-align: left;
   }
   ion-item {
     --ion-background-color: #fdfdfd;
   }
   ion-content {
     --ion-background-color: #fdfdfd;
-  }
-  h2 {
-    color: #fff;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -121,25 +154,39 @@
   ion-footer {
     --ion-background-color: #ef6c00;
   }
+  ion-title {
+    background-image: url("https://i.pinimg.com/originals/6e/9e/57/6e9e57ca0c30628a66e5a577e09c4600.png");
+  }
+  ion-grid {
+    border: #000;
+  }
+  #titulo {
+    color: #ef6c00;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px whitesmoke;
+  }
   #botUs {
-    align-items: center;
-    color: 241;
+    color: #fff;
+    --background: #ef6c00;
+    text-align: right;
+  }
+  #usNam {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
   }
 }
 @media (min-width: 1200px) {
   ion-header {
     color: #fffefe;
     --ion-background-color: #ef6c00;
-    text-align: left;
   }
   ion-item {
     --ion-background-color: #fdfdfd;
   }
   ion-content {
     --ion-background-color: #fdfdfd;
-  }
-  h2 {
-    color: #fff;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -150,11 +197,29 @@
   ion-fab-button {
     --background: #000;
   }
+  ion-title {
+    background-image: url("https://i.pinimg.com/originals/6e/9e/57/6e9e57ca0c30628a66e5a577e09c4600.png");
+  }
   ion-footer {
     --ion-background-color: #ef6c00;
   }
+  ion-grid {
+    border: #000;
+  }
   #botUs {
     color: #fff;
-    --background: #00388d;
+    --background: #ef6c00;
+    text-align: right;
+  }
+  #usNam {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  #titulo {
+    color: #ef6c00;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px whitesmoke;
   }
 }

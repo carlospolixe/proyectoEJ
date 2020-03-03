@@ -1,21 +1,4 @@
-// import { Component, OnInit } from '@angular/core';
 
-// @Component({
-//   selector: 'app-paglog',
-//   templateUrl: './paglog.page.html',
-//   styleUrls: ['./paglog.page.scss'],
-// })
-// export class PaglogPage implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
-
-// falla aqui falta modulo auth service
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { LoadingController } from '@ionic/angular';

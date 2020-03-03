@@ -17,13 +17,8 @@
 
 </ion-header>
 
-<!-- <ion-content> 
-  My ID is: {{ id }} 
-  <p> Nombre: {{ document.data.nombre }} </p>
-  <p> Descripcion: {{ document.data.descripcion }} </p>
-</ion-content> -->
 
-<ion-content align="center">
+<ion-content align="center" *ngIf="isLogged">
     <ion-item>
         <ion-label>Nombre =</ion-label>
         <ion-input [(ngModel)]="document.data.nombre"></ion-input>
@@ -91,26 +86,97 @@
 
 
    
-    <!-- <ion-button (click)="clicBotonInsertar()">Añadir Juego</ion-button> -->
     <div align="center">
       <ion-button  id="botonBorrar" (click)="presentAlertConfirm()">Borrar Juego</ion-button>
       <ion-button  id="botonModificar" (click)="clicBotonModificar()">Guardar Juego</ion-button>
       <ion-button  id="botonAddimg" (click)="uploadImagePicker()">Añadir imagen Juego</ion-button>
-
     </div>
     
+</ion-content>
+
+
+<ion-content align="center" *ngIf="!isLogged">
+  <ion-item>
+      <ion-label>Nombre =</ion-label>
+      <ion-input [(ngModel)]="document.data.nombre" disabled></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Descripción =</ion-label>
+    <ion-input [(ngModel)]="document.data.descripcion" disabled></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sipnosis =</ion-label>
+    <ion-input [(ngModel)]="document.data.sipnosis" disabled></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>Genero =</ion-label>
+    <ion-input [(ngModel)]="document.data.genero" disabled></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Desarrolladora =</ion-label>
+    <ion-input [(ngModel)]="document.data.desarrolladora" disabled></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Presupuesto =</ion-label>
+    <ion-input [(ngModel)]="document.data.presupuesto" disabled></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Año de Salida =</ion-label>
+    <ion-input [(ngModel)]="document.data.salida" disabled></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Precio =</ion-label>
+    <ion-input [(ngModel)]="document.data.precio" disabled></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>URL =</ion-label>
+    <ion-input [(ngModel)]="document.data.imagen" disabled></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>URL Pagina de compra =</ion-label>
+    <ion-input [(ngModel)]="document.data.imagen2" disabled></ion-input>
+  </ion-item>
+
+  <ion-row>
+    <ion-col size="4" >
+      <ion-img [src]="document.data.imagen" disabled></ion-img>
+    </ion-col>
+  </ion-row>
+
+  
+  <ion-item >
+    <ion-button (click)="whatsappShare()" id="wa" ><ion-icon name="logo-whatsapp" ></ion-icon></ion-button>
+    <ion-button (click)="twitterShare()" id="tw"><ion-icon name="logo-twitter" ></ion-icon></ion-button>
+    <ion-button (click)="facebookShare()" id="fa"><ion-icon name="logo-facebook" ></ion-icon></ion-button>
+  </ion-item>
+
+
+
+ 
+  <div align="center">
+    <ion-button  id="botonBorrar" (click)="presentAlertConfirm()" *ngIf="isLogged">Borrar Juego</ion-button>
+    <ion-button  id="botonModificar" (click)="clicBotonModificar()" *ngIf="isLogged">Guardar Juego</ion-button>
+    <ion-button  id="botonAddimg" (click)="uploadImagePicker()" *ngIf="isLogged">Añadir imagen Juego</ion-button>
+
+  </div>
+  
 </ion-content>
 
 <!-- Pie de Pagina Con los botones de Navegacion -->
 <ion-footer align="center">
   <ion-toolbar >
     <ion-button (click)="bothome()"><ion-icon name="home" ></ion-icon></ion-button>
-    <!-- <ion-button (click)="boconfig()"><ion-icon name="eye"></ion-icon></ion-button> -->
     <ion-button (click)="onpickupClick()"> <ion-icon name="md-map"></ion-icon></ion-button>
-    <ion-button (click)="numeroTLF()"><ion-icon name="call"></ion-icon></ion-button>
     <ion-button  (click)="bothome()"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
-   
-
-    
   </ion-toolbar>
 </ion-footer>

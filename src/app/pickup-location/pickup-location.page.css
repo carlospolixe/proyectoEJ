@@ -11,7 +11,10 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #bbb;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -24,6 +27,13 @@
   }
   ion-footer {
     --ion-background-color: #ef6c00;
+  }
+  #hs {
+    color: #000;
+    text-align: center;
+  }
+  p {
+    font-size: 16px;
   }
 }
 @media (min-width: 576px) {
@@ -39,7 +49,10 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #bbb;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -52,6 +65,13 @@
   }
   ion-footer {
     --ion-background-color: #ef6c00;
+  }
+  #hs {
+    color: #000;
+    text-align: center;
+  }
+  p {
+    font-size: 16px;
   }
 }
 @media (min-width: 768px) {
@@ -67,7 +87,10 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #bbb;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -80,6 +103,13 @@
   }
   ion-footer {
     --ion-background-color: #ef6c00;
+  }
+  #hs {
+    color: #000;
+    text-align: center;
+  }
+  p {
+    font-size: 16px;
   }
 }
 @media (min-width: 992px) {
@@ -95,7 +125,10 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #bbb;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -108,6 +141,13 @@
   }
   ion-footer {
     --ion-background-color: #ef6c00;
+  }
+  #hs {
+    color: #000;
+    text-align: center;
+  }
+  p {
+    font-size: 16px;
   }
 }
 @media (min-width: 1200px) {
@@ -123,7 +163,10 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #fff;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -136,5 +179,12 @@
   }
   ion-footer {
     --ion-background-color: #ef6c00;
+  }
+  #hs {
+    color: #000;
+    text-align: center;
+  }
+  p {
+    font-size: 16px;
   }
 }

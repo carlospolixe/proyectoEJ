@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Validators, FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
@@ -9,6 +10,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage {
+
+  value: any = {
+    email: "email",
+    password: "password"
+  };
 
   validations_form: FormGroup;
   errorMessage: string = '';
@@ -56,4 +62,21 @@ export class LoginPage {
   goRegisterPage(){
     this.router.navigate(["/register"]);
   }
+
+  bothome(){
+    this.router.navigate(["/home"]);
+  }
+  
+  boconfig(){
+    this.router.navigate(["/config"]);
+  }
+  
+  boMaps(){
+    this.router.navigate(["/maps"]);
+  }
+  onpickupClick(){
+    this.router.navigate(['pickup-location']);
+  }
+
+ 
 }

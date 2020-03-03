@@ -10,6 +10,11 @@ import { Router } from '@angular/router';
 })
 export class RegisterPage implements OnInit {
 
+  value: any = {
+    email: "email",
+    password: "password"
+  };
+
   validations_form: FormGroup;
   errorMessage: string = '';
   successMessage: string = '';
@@ -59,6 +64,11 @@ export class RegisterPage implements OnInit {
 
   goLoginPage(){
     this.router.navigate(["/login"]);
+  }
+
+  
+  bothome(){
+    this.router.navigate(["/home"]);
   }
 
 }

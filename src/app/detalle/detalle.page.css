@@ -11,7 +11,10 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #bbb;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -57,7 +60,10 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #bbb;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -103,7 +109,10 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #bbb;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -149,7 +158,10 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #bbb;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
   }
   ion-card-content {
     background-color: #c3c5c5;
@@ -195,7 +207,10 @@
     --ion-background-color: #fdfdfd;
   }
   h2 {
-    color: #fff;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
   }
   ion-card-content {
     background-color: #c3c5c5;

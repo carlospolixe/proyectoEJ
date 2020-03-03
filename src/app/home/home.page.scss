@@ -3,7 +3,7 @@
     ion-header {
         color: rgb(255, 254, 254);
         --ion-background-color: rgb(239, 108, 0);
-        text-align:left;
+        // text-align:left;
     }
     ion-item {
         --ion-background-color: rgb(253, 253, 253);
@@ -13,9 +13,7 @@
         --ion-background-color: rgb(253, 253, 253);
     }
     
-    h2{
-        color: rgb(255, 255, 255);  
-    }
+
     
     
    
@@ -35,6 +33,17 @@
         
     }
 
+    ion-title{
+        background-image: url("https://i.pinimg.com/originals/6e/9e/57/6e9e57ca0c30628a66e5a577e09c4600.png");
+        background-size: 100%;
+    }
+
+    #titulo{
+        color: rgb(239, 108, 0);
+        font-weight: bold;
+        font-style: italic;
+         text-shadow: 2px 2px 2px  whitesmoke;
+    }
 
     
     ion-footer {
@@ -42,12 +51,17 @@
         
         
     }
-
     #botUs{
-        align-items: center;
-        color: green($color: #09f1e6);
+        color: rgb(255, 255, 255);
+        --background: rgb(239, 108, 0);
+        text-align: right;
     }
-    
+
+    #usNam{
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+    }
     
     
     
@@ -58,7 +72,7 @@
     ion-header {
         color: rgb(255, 254, 254);
         --ion-background-color: rgb(239, 108, 0);
-        text-align:left;
+        // text-align:left;
     }
     ion-item {
         --ion-background-color: rgb(253, 253, 253);
@@ -68,9 +82,7 @@
         --ion-background-color: rgb(253, 253, 253);
     }
     
-    h2{
-        color: rgb(255, 255, 255);  
-    }
+
     
     
    
@@ -90,8 +102,19 @@
         
     }
 
-
+    ion-title{
+        background-image: url("https://i.pinimg.com/originals/6e/9e/57/6e9e57ca0c30628a66e5a577e09c4600.png");
+    }
     
+
+    #titulo{
+        color: rgb(239, 108, 0);
+        font-weight: bold;
+        font-style: italic;
+         text-shadow: 2px 2px 2px  whitesmoke;
+    }
+
+
     ion-footer {
         --ion-background-color: rgb(239, 108, 0);
         
@@ -99,8 +122,15 @@
     }
 
     #botUs{
-        align-items: center;
-        color: green($color: #09f1e6);
+        color: rgb(255, 255, 255);
+        --background: rgb(239, 108, 0);
+        text-align: right;
+    }
+
+    #usNam{
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
     }
       
     
@@ -110,7 +140,7 @@
     ion-header {
         color: rgb(255, 254, 254);
         --ion-background-color: rgb(239, 108, 0);
-        text-align:left;
+        // text-align:left;
     }
     ion-item {
         --ion-background-color: rgb(253, 253, 253);
@@ -120,9 +150,7 @@
         --ion-background-color: rgb(253, 253, 253);
     }
     
-    h2{
-        color: rgb(255, 255, 255);  
-    }
+
     
     
    
@@ -142,6 +170,21 @@
         
     }
 
+    ion-title{
+        background-image: url("https://i.pinimg.com/originals/6e/9e/57/6e9e57ca0c30628a66e5a577e09c4600.png");
+    }
+
+    ion-grid{
+        border: rgb(0, 0, 0);
+    }
+
+    #titulo{
+        color: rgb(239, 108, 0);
+        font-weight: bold;
+        font-style: italic;
+         text-shadow: 2px 2px 2px  whitesmoke;
+    }
+
 
     
     ion-footer {
@@ -149,10 +192,15 @@
         
         
     }
-
     #botUs{
-        align-items: center;
-        color: green($color: #09f1e6);
+        color: rgb(255, 255, 255);
+        --background: rgb(239, 108, 0);
+        text-align: right;
+    }
+    #usNam{
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
     }
       
     
@@ -163,7 +211,7 @@
     ion-header {
         color: rgb(255, 254, 254);
         --ion-background-color: rgb(239, 108, 0);
-        text-align:left;
+        // text-align:left;
     }
     ion-item {
         --ion-background-color: rgb(253, 253, 253);
@@ -173,9 +221,7 @@
         --ion-background-color: rgb(253, 253, 253);
     }
     
-    h2{
-        color: rgb(255, 255, 255);  
-    }
+
     
     
    
@@ -191,23 +237,42 @@
     }
 
     ion-fab-button {
-        --background: rgb(0, 0, 0);
-        
+        --background: rgb(0, 0, 0);    
+    }
+
+    ion-footer {
+        --ion-background-color: rgb(239, 108, 0);  
+    }
+
+    ion-title{
+        background-image: url("https://i.pinimg.com/originals/6e/9e/57/6e9e57ca0c30628a66e5a577e09c4600.png");
+    }
+
+    ion-grid{
+        border: rgb(0, 0, 0);
     }
 
 
-    
-    ion-footer {
-        --ion-background-color: rgb(239, 108, 0);
-        
-        
+    #titulo{
+        color: rgb(239, 108, 0);
+        font-weight: bold;
+        font-style: italic;
+         text-shadow: 2px 2px 2px  whitesmoke;
     }
 
     #botUs{
-        align-items: center;
-        color: green($color: #09f1e6);
+        color: rgb(255, 255, 255);
+        --background: rgb(239, 108, 0);
+        text-align: right;
     }
-    
+
+    #usNam{
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+
     
 }
 @media(min-width: 1200px) {
@@ -216,7 +281,7 @@
     ion-header {
         color: rgb(255, 254, 254);
         --ion-background-color: rgb(239, 108, 0);
-        text-align:left;
+        // text-align:left;
     }
     ion-item {
         --ion-background-color: rgb(253, 253, 253);
@@ -226,12 +291,7 @@
         --ion-background-color: rgb(253, 253, 253);
     }
     
-    h2{
-        color: rgb(255, 255, 255);  
-    }
-    
-    
-   
+
     ion-card-content {
         background-color: rgb(195, 197, 197);
         
@@ -247,24 +307,38 @@
         --background: rgb(0, 0, 0);
         
     }
-
+    ion-title{
+        background-image: url("https://i.pinimg.com/originals/6e/9e/57/6e9e57ca0c30628a66e5a577e09c4600.png");
+    }
 
     
     ion-footer {
-        --ion-background-color: rgb(239, 108, 0);
-        
-        
+        --ion-background-color: rgb(239, 108, 0);  
+    }
+
+    ion-grid{
+        border: rgb(0, 0, 0);
     }
 
     #botUs{
         color: rgb(255, 255, 255);
-        --background: rgb(0, 56, 141);
+        --background: rgb(239, 108, 0);
+        text-align: right;
     }
 
+    #usNam{
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+    }
     #titulo{
-        
+        color: rgb(239, 108, 0);
+        font-weight: bold;
+        font-style: italic;
+         text-shadow: 2px 2px 2px  whitesmoke;
     }
 
+   
     
     
 }

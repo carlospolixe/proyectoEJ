@@ -7,6 +7,7 @@ import { AlertController, LoadingController, ToastController } from '@ionic/angu
 import { ImagePicker } from '@ionic-native/image-picker/ngx';
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 import { CallNumber } from '@ionic-native/call-number/ngx';
+import { AngularFireAuth } from '@angular/fire/auth';
 
 
 
@@ -16,6 +17,11 @@ import { CallNumber } from '@ionic-native/call-number/ngx';
   styleUrls: ['./detalle.page.scss'],
 })
 export class DetallePage implements OnInit {
+
+  
+  userEmail: String = "";
+  userUID: String = "";
+  isLogged: boolean;
 
   id = null;
   document: any = {
@@ -35,6 +41,7 @@ export class DetallePage implements OnInit {
       public alertController: AlertController,
       private activatedRoute: ActivatedRoute,
       private firestoreService: FirestoreService, 
+      private afAuth: AngularFireAuth, 
       private router: Router) {
 
  
@@ -247,6 +254,18 @@ numeroTLF(){
 onpickupClick(){
   this.router.navigate(['pickup-location']);
 }
+
+ionViewDidEnter() {
+  this.isLogged = false;
+  this.afAuth.user.subscribe(user => {
+    if(user){
+      this.userEmail = user.email;
+      this.userUID = user.uid;
+      this.isLogged = true;
+    }
+  })
+}
+
 
 
 }
